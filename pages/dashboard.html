@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="../css/mystyleSheet.css"/>
+<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css"/>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+
+<body>
+<div class="main">
+<div class="container">
+<div class="header">
+<div class="headerleft">
+<img src="../images/logo1.png" width="184" height="45" alt="logo">
+</div>
+<div class="headerright">
+<a href="">
+<span id="divuser">Username</span>
+<b class="caret"></b>
+</a>
+</div>
+<div class="dropdown" id="divlog">
+<ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+</div>
+</div>
+<div class="content">
+<div class="contentleft">
+<ul>
+<li><a href="">Dashboard</a></li>
+<li><a href="">Menu Management</a></li>
+<li><a href="">Transactions</a></li>
+<li><a href="">Reports</a></li>
+<li><a href="">Accounts</a>
+<ul class="accounts">
+<li><a href="">Manager</a>
+<li><a href="">Waiter</a>
+<li><a href="">Kitchen</a>
+<li><a href="">Table</a>
+</ul>
+</li>
+<li><a href="">Settings</a>
+<ul class="accounts">
+<li><a href="">Tax</a>
+<li><a href="">Payment</a>
+<li><a href="">Shifts</a>
+<li><a href="">Printers</a>
+</ul>
+</li>
+</ul>
+</div>
+<div class="contentright">
+<div class="wid80">
+<span class="sel"><a href="">Numerical Info</a></span>
+<span  class="unsel"><a href="">Graphical Info</a></span>
+</div>
+<div class="ranges brdbtm1p">
+<span><a  href="">Today</a></span><label><b>|</b></label>
+<span><a  href="">Yesterday</a></span><label><b>|</b></label>
+<span><a  href="">This week</a></span><label><b>|</b></label>
+<span><a  href="">This Month</a></span><label><b>|</b></label>
+<span class="txtdec_non"><a  href="">Date Range</a></span>
+</div>
+<div class="wid100p">
+<div class="box1 mglft7p">
+<span class="brdbtm">Total Sales</span>
+<div class="brd_txt">
+<span>50,000<img src="../images/up arrow.png" width="28" height="25" alt="arrow" class="malr15p" /></span>
+<div class="subtotl">
+<span>45000</span>
+<label>Subtotal</label>
+</div>
+<div class="subtotl">
+<span>45000</span>
+<label>Subtotal</label>
+</div>
+</div>
+</div>
+<div class="box1">
+<span class="brdbtm">Shift Wise Sales</span>
+<div class="subtotl brd_txt wid100p">
+<label class="brkfst_lbl">Breakfast</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">Lunch</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">Dinner</label>
+<span class="wid45p">15000</span>
+
+
+</div>
+</div>
+<div class="box1 mglft7p mgtop0">
+<span class="brdbtm">Top Selling
+<select class="cate">
+<option>Top1</option>
+<option>Top2</option>
+<option>Top3</option>
+<option>Top4</option>
+<option>Top5</option>
+</select>
+<select class="cate">
+<option>Categories</option>
+<option>Categories1</option>
+<option>Categories2</option>
+<option>Categories3</option>
+<option>Categories4</option>
+<option>Categories5</option>
+</select>
+
+</span>
+<div class="subtotl wid100p brd_txt">
+<label class="brkfst_lbl">1.Starters</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">2.Sandwitches</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">3.Pizza</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">4.Pasta</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">5.Mains</label>
+<span class="wid45p">15000</span>
+
+
+</div>
+</div>
+<div class="box1 mgtop0">
+<span class="brdbtm mgbtm9">Sales Tracker
+<div class="custom">
+<span><a  href="">Customize</a></span></div>
+</span>
+<div class="subtotl brd_txt wid100p">
+<label class="brkfst_lbl">1.Starters</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">2.Sandwitches</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">3.Pizza</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">4.Pasta</label>
+<span class="wid45p">15000</span>
+<label class="brkfst_lbl">5.Mains</label>
+<span class="wid45p">15000</span>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+   $("divlog").hide();
+   $("divuser").click(function(){
+   $("divlog").toggle("slow");
+   });
+});
+</script>
+</body>
+</html>
